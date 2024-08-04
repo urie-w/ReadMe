@@ -38,16 +38,17 @@ return `[${renderLicenseBadge(license)}](${renderLicenseLink(license)})`;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  #Project Title: ${data.title}
 
-  ##Description: ${data.description}
+  ##Description
+  ${data.description}
 
-  ##Installation: ${data.installation}
+  ##Installation
+  ${data.installation}
 
-  ##Usage: ${data.usage}
+  ##Usage
+  ${data.usage}
   
   ##Table of Contents
-  *[Project Title](#title)
   *[Description](#description)
   *[Installation](#installation)
   *[Usage](#usage)
