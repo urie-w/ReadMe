@@ -37,16 +37,28 @@ const questions = [
         message: 'What is your GitHub username?',
         name: 'GitHub',
     },
+    {
+        type: 'input',
+        message: 'What is your email address?',
+        name: 'email',
+    }
 ];
 
-validate: (value) => {
-    if (value) {
-        return true;
-    } else {
-        console.log('Please enter a value to continue.');
-        return false;
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return new Promise((resolve, reject)) => {
+        fs.writeFile(fileName, data, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve({
+                ok: true,
+                message: 'ReadMe file created!'
+            });
+        });
+    }
+}
 
 // TODO: Create a function to initialize app
 function init() {}
