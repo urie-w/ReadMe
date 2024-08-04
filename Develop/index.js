@@ -46,7 +46,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    return new Promise((resolve, reject)) => {
+    return new Promise((resolve, reject) => {
         fs.writeFile(fileName, data, err => {
             if (err) {
                 reject(err);
@@ -57,7 +57,7 @@ function writeToFile(fileName, data) {
                 message: 'ReadMe file created!'
             });
         });
-    }
+    });
 }
 
 // TODO: Create a function to initialize app
