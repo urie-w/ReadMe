@@ -65,15 +65,15 @@ function init() {
     inquirer.prompt(questions)
     .then(answers => {
         console.log(answers);
-        return generateMarkdown(answers);
+       // return generateMarkdown(answers);
+        writeToFile('./output/README.md', generateMarkdown(answers));
     })
-    .then(markdown => {
-        writeToFile('./output/README.md', markdown);
-        console.log('ReadMe created!');
-    })
-    .catcher((error) => {
-        console.log(error);
-    });
+    // .then(markdown => {
+    //     console.log('ReadMe created!');
+    // })
+    // .catcher((error) => {
+    //     console.log(error);
+    // });
 }
 
 // Function call to initialize app
