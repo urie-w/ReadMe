@@ -63,13 +63,13 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then(answers => {
+.then(answers => {
         console.log(answers);
        // return generateMarkdown(answers);
         writeToFile('./output/README.md', generateMarkdown(answers));
     })
     // .then(markdown => {
-    //     console.log('ReadMe created!');
+   console.log('ReadMe created!');
     // })
     // .catcher((error) => {
     //     console.log(error);
