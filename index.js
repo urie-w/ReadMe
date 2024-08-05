@@ -69,12 +69,13 @@ function init() {
         writeToFile('./output/README.md', generateMarkdown(answers));
     })
     // .then(markdown => {
-   console.log('ReadMe created!');
-    // })
-    // .catcher((error) => {
-    //     console.log(error);
-    // });
-}
-
-// Function call to initialize app
-init();
+        // })
+        // .catcher((error) => {
+            //     console.log(error);
+            // });
+        }
+        
+        // Function call to initialize app
+        console.log('ReadMe created!');
+        init();
+        
