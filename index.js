@@ -74,8 +74,8 @@ function init() {
             //     console.log(error);
             // });
         }
+        console.log('ReadMe created!');
         
         // Function call to initialize app
-        console.log('ReadMe created!');
         init();
         
