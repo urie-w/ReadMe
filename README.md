@@ -11,15 +11,19 @@
 
   ## Images
   ![alt text](image.png)
+
+  ## Video
+ [text](<../../../Downloads/screen-capture (1).webm>)
+  
   
   ## Table of Contents
-  *[Description](#description)
-  *[Installation](#installation)
-  *[Usage](#usage)
-  *[Credits](#credits)
-  *[License](#license)
-  *[GitHub](#github)
-  *[Questions](#questions)
+  *[Description](#Description)
+  *[Installation](#Installation)
+  *[Usage](#Usage)
+  *[Credits](#Credits)
+  *[License](#License)
+  *[GitHub](#Github)
+  *[Questions](#Questions)
 
   ## Credits: Mark, Sandra, and StackOverflow.
 

@@ -22,6 +22,11 @@ const questions = [
         name: 'Installation',
     },
     {
+        type: 'input',
+        message: 'How is your project used?',
+        name: 'Usage',
+    },
+    {
         type: 'list',
         message: 'Which license is used for this project?',
         name: 'License',
@@ -40,7 +45,7 @@ const questions = [
     {
         type: 'input',
         message: 'What is your email address?',
-        name: 'email',
+        name: 'Email',
     }
 ];
 
